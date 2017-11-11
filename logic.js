@@ -28,7 +28,8 @@ addEventListener("keypress", function guessFunction(event) {
 	key = String.fromCharCode(event.keyCode).toLowerCase();
 	if (key == letter) {
 		document.getElementById("wins").innerHTML = score++;
-		alert("You win!");
+		alert("You win! You must be psychic!");
+		integer = 9;
 		randomizeLetters ();
 	//If there are guesses left, the guesses left will count down, when the user guesses incorrectly.	
 	} else if (integer > 0) {
